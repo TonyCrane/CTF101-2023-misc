@@ -20,6 +20,6 @@ jobs:
         source_file: 'slide/site/.'
         destination_repo: 'TonyCrane/slides'
         destination_branch: 'master'
-        destination_folder: 'RevealmdTemplate'
+        destination_folder: 'CTF101-2023-misc'
         user_email: 'tonycrane@foxmail.com'
         user_name: 'TonyCrane'

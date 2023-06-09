@@ -1,18 +1,17 @@
-# TonyCrane's Slide Template
+# 2023「安全攻防实践基础」misc 部分课件
 
-一个 [reveal-md](https://github.com/webpro/reveal-md) 的简单主题，部分参考了 [jyywiki](https://jyywiki.cn) 的主题。（应该会随着我的使用不断更新）
+## 课程介绍
+2023 年浙江大学计算机学院短学期课程综合实践 I 中「安全攻防实践基础」课程（即 AAA 战队开设的 CTF 课程）的 misc 部分。
 
-预览：https://slides.tonycrane.cc/RevealmdTemplate
+课程主仓库在：[team-s2/summer_course_2023](https://github.com/team-s2/summer_course_2023/)，课程网站在：[courses.zjusec.com](https://courses.zjusec.com/)。
 
-- custom.css：亮色主题，载入即可
-- dark.css：暗色配置，使用需附带在 custom.css 后面
+misc 部分三次课程，一次必修的 misc 基础，两次选修的 misc 专题。课程主页托管在 <https://slides.tonycrane.cc/CTF101-2023-misc/>。
 
-~~对于我这种停留在 html+css 的前端水平，当然是宁可多糊 html 也不愿意写个预处理插件。~~ 在 `.vscode/snippets.code-snippets` 中是一些方便糊 html 的代码片段。
-
-## 构建与部署
+## 关于 slides
+### 构建与部署
 
 <details>
-<summary>旧版指南</summary>
+<summary>原版指南</summary>
 
 1. 安装 reveal-md
     ```sh 
@@ -33,23 +32,28 @@
 
 </details>
 
-使用 Makefile 来辅助预览与构建
+本课程所有 slides 都使用 reveal-md，源码都在 slides/src/ 目录中，同时包含了一个简单的 Makefile 用来更方便地预览和构建。
 
-1. 安装 reveal-md
+- 实时预览
     ```sh 
-    $ npm install -g reveal-md
+    $ make         # 仅 lec0
+    $ make LECNO=1 # lec1
     ```
-2. 开启本地实时预览
+- 单个 slides 构建
     ```sh
-    $ make  # or make live
+    $ make build         # 仅 lec0
+    $ make LECNO=1 build # lec1
     ```
-3. 构建静态文件
+- 构建全部 slides
     ```sh
-    $ make build
+    $ make all
+    ``` 
+- 清除全部 slides
+    ```sh
+    $ make clean
     ```
-    - 生成 pdf 版：在 url 后面加上 `?print-pdf` 使用浏览器打印
 
-## 用法
+### 用法
 
 和 reveal-js 的快捷键一致，在页面中按下 `?` 可以查看所有快捷键。常用的：
 
