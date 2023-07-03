@@ -40,9 +40,9 @@ misc 部分课程资料 By [@TonyCrane](https://github.com/TonyCrane)
 
 <div class="three-line">
 
-|主题|时间|幻灯片|回放|作业
+|主题|时间|幻灯片|回放|实验|
 |:--|:--|:--|:--|:--|
-|misc 基础：简介/编解码/<span></span>OSINT|7.06 下午||||
+|misc 基础：简介/编解码/<span></span>OSINT|7.06 下午|[lec0](https://slides.tonycrane.cc/CTF101-2023-misc/lec0/)|||
 |misc 专题一：图片/音频隐写|7.12 下午|
 |misc 专题二：流量/内存取证|7.14 晚上|
 
