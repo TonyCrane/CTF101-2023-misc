@@ -15,10 +15,10 @@ revealOptions:
     width: 1000
 ---
 
-<!-- .slide: data-background="lec0/cover.png" -->
+<!-- .slide: data-background="lec1/cover.png" -->
 
 <!--s-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 <div class="middle center">
 <div style="width: 100%">
@@ -29,7 +29,7 @@ revealOptions:
 </div>
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 ## 什么是 misc？
 
@@ -62,7 +62,7 @@ revealOptions:
 </div>
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 ## 来看一些好玩的 misc 题吧！
 
@@ -76,7 +76,7 @@ revealOptions:
 - <span style="display: flex; justify-content: space-between;"><span>CISCN2023: pyshell</span><span>——&hairsp;&hairsp;沙箱逃逸&emsp;</span></span>
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 ## 如何学习 misc？
 
@@ -94,7 +94,7 @@ revealOptions:
     - misc 朋友日常中经常：“诶，这个好像可以出成题目”
 
 <!--s-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 <div class="middle center">
 <div style="width: 100%">
@@ -105,7 +105,7 @@ revealOptions:
 </div>
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 ## 编解码？加解密？哈希？
 
 首先一定要明确一点：
@@ -118,13 +118,13 @@ revealOptions:
 三种常见的 01 串转换方式：
 
 <div style="text-align: center; margin-top: -20px;">
-<img src="lec0/bin_trans.png" width="60%" style="margin: 0 auto;">
+<img src="lec1/bin_trans.png" width="60%" style="margin: 0 auto;">
 </div>
 
 一个非常常用的编解码工具：[CyberChef (official)](https://gchq.github.io/CyberChef/) /[（个人自建）](https://lab.tonycrane.cc/CyberChef)
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 ## 为什么乱码会出现？- 字符编码
 
 - 字符编码：人类理解的字符 <=> 计算机理解的 01 串 之间的映射
@@ -143,7 +143,7 @@ revealOptions:
     - GB 2312 / GBK / GB 18030-2022
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 ## Unicode 字符集与 UTF 编码
 
 参见：https://note.tonycrane.cc/cs/unicode/
@@ -162,10 +162,10 @@ revealOptions:
     - UTF-16：变长编码（2/4），不兼容 ASCII
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 ## 怎么就乱码了？
 
-<img style="float: right; margin-right: 40px; margin-top: 0px; margin-bottom: -10px;" width="35%" src="lec0/chars.png">
+<img style="float: right; margin-right: 40px; margin-top: 0px; margin-bottom: -10px;" width="35%" src="lec1/chars.png">
 
 几个字符集不兼容的部分互相编解码，常见的：
 
@@ -184,7 +184,7 @@ revealOptions:
 - 必要的时候可以使用 python 来进行编解码/进制转换等
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 ## 摩尔斯电码
 
 前面说到的字符编码：01 串 <=> 字符；接下来看另一种：字符 <=> 字符
@@ -197,11 +197,11 @@ revealOptions:
     - 鹤 -> 7729 -> -··· -··· ··- -·
 
 <div style="text-align: center; margin-top: 5px;">
-<img src="lec0/morse.png" width="55%" style="margin: 0 auto;">
+<img src="lec1/morse.png" width="55%" style="margin: 0 auto;">
 </div>
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 ## Base 编码家族
 
 接下来是 01 串 <=> 01 串，但这里介绍的 Base 家族的结果都可以转为可见字符
@@ -215,11 +215,11 @@ revealOptions:
     - 结果长度必须是 4 的倍数，不足的用 = 不齐（1~2 个，明显特征）
 
 <div style="text-align: center; margin-top: 30px;">
-<img src="lec0/base.png" width="90%" style="margin: 0 auto;">
+<img src="lec1/base.png" width="90%" style="margin: 0 auto;">
 </div>
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 ## Base 编码家族（续）
 
 Base-n 系列的本质：字节流 -> 整数 -> n 进制 -> 系数查表
@@ -237,7 +237,7 @@ Base-n 系列的本质：字节流 -> 整数 -> n 进制 -> 系数查表
     - Base36：0-9A-Z（比 Base62 少了 a-z）
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 ## more?
 
 - 其他常用编码
@@ -255,7 +255,7 @@ Base-n 系列的本质：字节流 -> 整数 -> n 进制 -> 系数查表
     - Ciphey：https://github.com/Ciphey/Ciphey
 
 <!--s-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 <div class="middle center">
 <div style="width: 100%">
@@ -266,7 +266,7 @@ Base-n 系列的本质：字节流 -> 整数 -> n 进制 -> 系数查表
 </div>
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 ## 凯撒密码
 
@@ -283,7 +283,7 @@ Base-n 系列的本质：字节流 -> 整数 -> n 进制 -> 系数查表
     - 以 ROT47 的偏移规则进行爆破 "ROT47 Brute Force"
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 ## 乘法密码/仿射密码
 
@@ -300,11 +300,11 @@ Base-n 系列的本质：字节流 -> 整数 -> n 进制 -> 系数查表
     - 根据英文文本中字母出现的频率以及一些常见单词即可轻松破解
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 ## 维吉尼亚密码
 
-<img style="float: right; margin-right: 20px; margin-top: -10px; margin-bottom: -10px;" width="40%" src="lec0/vig.png">
+<img style="float: right; margin-right: 20px; margin-top: -10px; margin-bottom: -10px;" width="40%" src="lec1/vig.png">
 
 - 一种多表加密的替换密码
 - 密钥任意长，并且以循环使用
@@ -320,7 +320,7 @@ Base-n 系列的本质：字节流 -> 整数 -> n 进制 -> 系数查表
 
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 ## 维吉尼亚密码破解
 
@@ -333,7 +333,7 @@ Base-n 系列的本质：字节流 -> 整数 -> n 进制 -> 系数查表
     - 最大公因数（gcd）为 4 -> 密钥长度为 4
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 ## 维吉尼亚密码破解（续）
 
@@ -348,7 +348,7 @@ Base-n 系列的本质：字节流 -> 整数 -> n 进制 -> 系数查表
     <span style="font-size: 50%; display: inline-block; margin-top: 10px;">There are an old horse and a little horse on a farm. One day the old horse asks the little horse to send the wheat to the mill. The little horse is very happy. He carries the wheat and runs toward the mill. But there is a river in front of the little horse. He stops and does not know what to do next. Just then Aunt Cow is passing by. The little horse asks, "Aunt Cow, please tell me. Can I cross the river". Aunt Cow answers, "It is not deep, you can cross it." When the little horse begins to cross the river, a little squirrel shouts at him, "Littlehorse, dont cross it, you will be drowned. Yesterday one of my friends was drowned in this river." the little horse is very afraid. Finally he decides to go home and ask his mother.The old horse asks, "Why do you take the wheat back Whats wrong with you Mychild." the little horse answers sadly, "There is a river in front of me. Aunt Cow said it was not deep. But the little squirrel said it was deep. What shall I do". The old horse says, "My child, you should try to cross the river by yourself. If you donot try, how do you know the river is deep or not". The little horse carries the wheat and returns to the riverside. At last, he succeeds incrossing the river. Now, He knows how deep the river is.</span>
 
 <!--s-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 <div class="middle center">
 <div style="width: 100%">
@@ -359,7 +359,7 @@ Base-n 系列的本质：字节流 -> 整数 -> n 进制 -> 系数查表
 </div>
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 ## 什么是 OSINT & 声明
 
@@ -376,7 +376,7 @@ Base-n 系列的本质：字节流 -> 整数 -> n 进制 -> 系数查表
 - 对于擅自在现实世界（非 CTF 题目构造的虚拟情形）中复现的行为，由此产生的一切后果由行为人自行承担，本课程、作者以及 AAA 团队概不负责
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 ## 信息搜集/查询基础
 
@@ -394,7 +394,7 @@ Base-n 系列的本质：字节流 -> 整数 -> n 进制 -> 系数查表
     - 有时可以找到出题人特意保存快照后删除的内容
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 ## 文件信息泄露
 
@@ -413,7 +413,7 @@ Base-n 系列的本质：字节流 -> 整数 -> n 进制 -> 系数查表
     - markdown 文件图片路径（本地路径/图床用户/自建图床网站）
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 ## 照片信息分析 - 图片搜索
 
@@ -430,7 +430,7 @@ Base-n 系列的本质：字节流 -> 整数 -> n 进制 -> 系数查表
 - TinEye：搜索完全相同的图片（找来源）
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 ## 照片信息分析 - 地点线索搜集
 
@@ -439,13 +439,13 @@ Base-n 系列的本质：字节流 -> 整数 -> n 进制 -> 系数查表
 - 来自 2021、2022 hackergame 的「旅行照片」
 
 <div style="text-align: center; margin-top: 20px;">
-<img src="lec0/travel_photo.png" width="80%" style="margin: 0 auto;">
+<img src="lec1/travel_photo.png" width="80%" style="margin: 0 auto;">
 </div>
 
 - 找到大概位置后可用百度全景地图/谷歌全景地图进行确认/查找附近线索
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 ## 照片信息分析 - 环境信息分析
 
@@ -454,18 +454,18 @@ Base-n 系列的本质：字节流 -> 整数 -> n 进制 -> 系数查表
 - 例：SECCON 时在酒店里拍的照片
 
 <div style="text-align: center; margin-top: 20px;">
-<img src="lec0/osint_ori.jpg" width="80%" style="margin: 0 auto;">
+<img src="lec1/osint_ori.jpg" width="80%" style="margin: 0 auto;">
 </div>
 
 根据几何学透视来进行简单分析⬇️
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 ## 照片信息分析 - 环境信息分析（续）
 
 <div style="text-align: center; margin-top: 5px; margin-bottom: -160px;">
-<img src="lec0/osint_sol.png" width="100%" style="margin: 0 auto;">
+<img src="lec1/osint_sol.png" width="100%" style="margin: 0 auto;">
 </div>
 
 - 确保图中垂直线互相平行
@@ -475,7 +475,7 @@ Base-n 系列的本质：字节流 -> 整数 -> n 进制 -> 系数查表
 - 根据参考建筑找视平线楼层即可
 
 <!--v-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 ## 照片信息分析 - 环境信息分析（续）
 
@@ -494,7 +494,7 @@ Base-n 系列的本质：字节流 -> 整数 -> n 进制 -> 系数查表
 
 
 <!--s-->
-<!-- .slide: data-background="lec0/background.png" -->
+<!-- .slide: data-background="lec1/background.png" -->
 
 ## misc 基础 Lab 简介
 
@@ -512,4 +512,4 @@ Base-n 系列的本质：字节流 -> 整数 -> n 进制 -> 系数查表
     - 一道题来自 ZJUCTF 2022
 
 <!--s-->
-<!-- .slide: data-background="lec0/ending.png" -->
+<!-- .slide: data-background="lec1/ending.png" -->
