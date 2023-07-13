@@ -621,7 +621,7 @@ PIL（Python Imaging Library）是 Python 中非常常用的图片处理库。
 
 ## misc 专题一 Lab 简介
 
-[courses.zjusec.com/misc/lab2](https://courses.zjusec.com/misc/lab2/)，三个必做，三个选做
+[courses.zjusec.com/topic/misc-lab2](https://courses.zjusec.com/topic/misc-lab2/)，三个必做，三个选做
 
 - 必做部分：
     - Challenge 1: songmingti（20 分）
